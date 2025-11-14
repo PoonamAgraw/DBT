@@ -1,0 +1,48 @@
+1.	Retrieve the entire contents of EMP table.
+	SELECT * FROM emp;
+
+2.	Print the name of employees.
+	SELECT ename FROM emp;
+
+3.	Retrieve the list of names and jobs of employees.
+	SELECT ename,job FROM emp;
+	
+4.	List of various department available from dept table.
+	SELECT dname FROM dept;
+
+5.	List all information about the Employees of the EMP table.	
+	SELECT ename,job1,empno,mgr,hiredate,sal,comm,username,deptno,gender FROM emp;
+	
+	
+6.	Show the information of the Department table.
+	SELECT * FROM dept;
+
+7.	Display the contents of the column Empno, Ename as Employee Name and Sal from the Emp table.
+	SELECT Empno, Ename,Sal FROM emp;
+
+8.	Display the Job, Comm and Ename from the Emp table with Customized column headings.
+	SELECT JOB  AS JOB1,  ename EmployeeName ,Comm Commission FROM emp;
+
+9.	Display the location as “Location” and names of all the departments as “Department Names”.
+	SELECT loc  AS Location,  dname DepartmentNames FROM dept;
+
+10.	List the different Managers Codes.
+	SELECT mgr FROM emp;
+	
+11.	Write a query, which concatenates the Emp No, Name and Mgr Code. Display output with spaces in the columns. 
+	SELECT concat(empno,ename,mgr) FROM emp;
+
+12.	Create a query to display all the data from the EMP table, separate each column by a comma.
+
+13.	Modify the above query to add a column that will subtract the Old Salary from the New Salary. 
+	SELECT 
+	
+14.	Write a query that produces the following for each employee as- 
+<employee name> earns <salary> monthly, but wants salary <3 times salary>. Label the columns Dream Salaries.
+
+15.	Display different types of positions available in the Company.
+	SELECT
+
+16.	Using the sales table, you need to report the following 
+a.	Appropriate column heading should be given for all the columns.
+	SELECt REPID AS ID, CUSTID CustomerID,CUSTNAME CustomerName,PRODID  PRODNAME                | AMOUNT

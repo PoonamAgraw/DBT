@@ -1,0 +1,140 @@
+select database();
+show databases;
+use database_name;
+show engines;
+show tables;
+desc table_name;
+insert into table_name values(,'',);
+select * from table_name;  or select column_names from table_name;  or select (multiple column_name seperated with comma)table_name;
+select length(column_name) table_name;
+create table table_name( column_name datatype, column_name datatype,.......);
+create table table_name( column_name datatype auto_increment, column_name datatype,.......);
+create table table_name( column_name datatype primary key auto_increment , column_name datatype, column_name datatype default 'value',.......);
+select now();
+select now, curdate();
+select now, curdate(),curtime();
+select now, curdate(),curtime();
+update table_name set column_name=value;
+select json_object('name for column' column_name.........);
+select json_array(column_name1,column_name1.....);
+select case when condition then return_statment else return statment end;
+create table table_name(column_name datatype , enum(value1,value2,value3.....));
+create table table_name(column_name datatype , set(value1,value2,value3.....));
+select find_in_set('find_value', 'value1,value2,value3.....'); or select find_in_set('find_value', column_name);
+create table table_name(column_name datatype , enum(value1,value2,value3.....) column_name datatype  generated always as (case when condition then return_statment  when condition then return_statment when condition then return_statment else return statment end);
+select column_name from table_name where condition;
+select nullif(column_name1,column_name2);// this will give null if both the column are similiar
+select nullif(column_name1,column_name2);// this will give first value if both the column are not similiar
+select ifnull(column_name1,column_name2);// this will give first value if both the column are not null
+select ifnull(column_name1,column_name2);// this will give column name which is not null 
+source file_path no semicolon // this will connect with the given path address
+Any arithmetic will performe with null then ans will always null
+select if(condition,'true','false');//true=return true if condition is true .. false=return false if condition is false
+select concat(value1,value2,value3.....);
+select curdate(), year(curdate());
+select elt(which place value you want to print after this comma,'value1','value2','value3','value4');
+select now(), extract(week from now());
+select now(), extract(day from now());
+select now(), last_Day(now());
+select '04/10/2025', str_to_date('04/10/2025','%d/%m/%Y');
+select date_format(now(), '%a');
+select curdate(), date_format(curdate(),'%Y-%m-01' ), last_Day(curdate());
+select column_name new_column_name,column_name new_column_name..... from table_name;
+select column_name new_column_name, value new_column_name  from table_name;//create new column with new column name and assign same value for each row
+select table_name.column_name,table_name.column_name,table_name.column_name new_column_name from table_name;
+select lpad('value',9 , '*');//***hhhhhh
+select rpad('value',9 , '*');//hhhhhh***
+select right(column_name, 4);//it will print last four place of the value of column
+select replace('value',whom to replace, what to replace);
+select 1234.34, round(1234.34) R1, round(1234.34, 1) R2,ceil(12345.15) R2, floor(12345.15) R3;
+select rand();//give random values
+select ascii('a'), ascii('z');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
