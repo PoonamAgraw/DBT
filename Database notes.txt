@@ -29,25 +29,25 @@ select ifnull(column_name1,column_name2);// value of 1 argu is null then replace
 source file_path (no semicolon) // this will connect with the given path address
 Any arithmetic will performe with null then ans will always null
 select if(condition,'true','false');//true=return true if condition is true .. false=return false if condition is false
-select concat(value1,value2,value3.....);
-select curdate(), year(curdate());
-select elt(which place value you want to print after this comma,'value1','value2','value3','value4');
-select now(), extract(week from now());
-select now(), extract(day from now());
-select now(), last_Day(now());
-select '04/10/2025', str_to_date('04/10/2025','%d/%m/%Y');
-select date_format(now(), '%a');
+select concat(value1,value2,value3.....);it will add all the values
+select  year(curdate());show current date year
+select elt(which place value you want to print after this comma(N),'value1','value2','value3','value4');element list N is which number you want to print from given values
+select now(), extract(week from now());it will extrat week from current date and time
+select now(), extract(day from now());it will extrat day from current date and time
+select now(), last_Day(now());it show last day of current date and time
+select '04/10/2025', str_to_date('04/10/2025','%d/%m/%Y');give pattern for date 
+select date_format(now(), '%a');will return day 
 select curdate(), date_format(curdate(),'%Y-%m-01' ), last_Day(curdate());
-select column_name new_column_name,column_name new_column_name..... from table_name;
+select column_name new_column_name,column_name new_column_name..... from table_name;it will given temporary name for column
 select column_name new_column_name, value new_column_name  from table_name;//create new column with new column name and assign same value for each row
-select table_name.column_name,table_name.column_name,table_name.column_name new_column_name from table_name;
-select lpad('value',9 , '*');//***hhhhhh
-select rpad('value',9 , '*');//hhhhhh***
+select table_name.column_name,table_name.column_name,table_name.column_name new_column_name from table_name;return values of particular column
+select lpad('value',9 , '*');//***hhhhhh left padding
+select rpad('value',9 , '*');//hhhhhh*** right padding
 select right(column_name, 4);//it will print last four place of the value of column
-select replace('value',whom to replace, what to replace);
-select 1234.34, round(1234.34) R1, round(1234.34, 1) R2,ceil(12345.15) R2, floor(12345.15) R3;
+select replace('value',whom to replace, what to replace);replace value
+select 1234.34, round(1234.34) R1, round(1234.34, 1) R2,ceil(12345.15) R2, floor(12345.15) R3;convert the value in given form
 select rand();//give random values
-select ascii('a'), ascii('z');
+select ascii('a'), ascii('z');give ascii value for given character
 
 
 
