@@ -1,33 +1,32 @@
 select database();
-show databases;
-use database_name;
-show engines;
-show tables;
-desc table_name;
-insert into table_name values(,'',);
-select * from table_name;  or select column_names from table_name;  or select (multiple column_name seperated with comma)table_name;
-select length(column_name) table_name;
-create table table_name( column_name datatype, column_name datatype,.......);
-create table table_name( column_name datatype auto_increment, column_name datatype,.......);
-create table table_name( column_name datatype primary key auto_increment , column_name datatype, column_name datatype default 'value',.......);
-select now();
-select now, curdate();
-select now, curdate(),curtime();
-select now, curdate(),curtime();
-update table_name set column_name=value;
-select json_object('name for column' column_name.........);
+show databases;//Show all databases
+use database_name;use selected databases
+show engines;show all engines
+show tables;show all tables
+desc table_name;describe given table
+insert into table_name values(,'',);insert value in particular table
+select * from table_name;  or select column_names from table_name;  or select (multiple column_name seperated with comma)table_name;//select the column to print on console
+select length(column_name) table_name;show the length of selected column
+create table table_name( column_name datatype, column_name datatype,.......);create table with given column
+create table table_name( column_name datatype auto_increment, column_name datatype,.......);column value will auto increment
+create table table_name( column_name datatype primary key auto_increment , column_name datatype, column_name datatype default 'value',.......);here given column value will consider fas primary key and values will auto increment
+select now();show current date and time
+select curdate(); show current date only
+select curtime();show current time only
+update table_name set column_name=value;update value of table with given condition
+select json_object('name for column1' ,value fro column 1,'name for column 2',value for column 2.........);
 select json_array(column_name1,column_name1.....);
-select case when condition then return_statment else return statment end;
-create table table_name(column_name datatype , enum(value1,value2,value3.....));
-create table table_name(column_name datatype , set(value1,value2,value3.....));
-select find_in_set('find_value', 'value1,value2,value3.....'); or select find_in_set('find_value', column_name);
-create table table_name(column_name datatype , enum(value1,value2,value3.....) column_name datatype  generated always as (case when condition then return_statment  when condition then return_statment when condition then return_statment else return statment end);
-select column_name from table_name where condition;
+select case when condition then return_statment else return statment end;//case will return only one value with correct condition matches
+create table table_name(column_name datatype , enum(value1,value2,value3.....));enum will select only one value and index will start from 1
+create table table_name(column_name datatype , set(value1,value2,value3.....));we can select multiple values 
+select find_in_set('find_value', 'value1,value2,value3.....'); or select find_in_set('find_value', column_name);it will find the given value in given set
+create table table_name(column_name datatype , enum(value1,value2,value3.....) column_name datatype  generated always as (case when condition then return_statment  when condition then return_statment when condition then return_statment else return statment end);generate will always generate a value by its own
+select column_name from table_name where condition;where condition will print only true values
 select nullif(column_name1,column_name2);// this will give null if both the column are similiar
 select nullif(column_name1,column_name2);// this will give first value if both the column are not similiar
-select ifnull(column_name1,column_name2);// this will give first value if both the column are not null
-select ifnull(column_name1,column_name2);// this will give column name which is not null 
-source file_path no semicolon // this will connect with the given path address
+select ifnull(column_name1,column_name2);// value of 1 argu is not null then return 1 parameter
+select ifnull(column_name1,column_name2);// value of 1 argu is null then replace it with 2 parameter
+source file_path (no semicolon) // this will connect with the given path address
 Any arithmetic will performe with null then ans will always null
 select if(condition,'true','false');//true=return true if condition is true .. false=return false if condition is false
 select concat(value1,value2,value3.....);
